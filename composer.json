@@ -1,0 +1,29 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packagist.org",
+      "options": {
+        "ssl": {
+          "verify_peer": false
+        }
+      }
+    }
+  ],
+  "config": {
+        "preferred-install": "dist",
+        "disable-tls": true,
+        "secure-http": false
+   },
+  "require": {
+    "altorouter/altorouter": "1.2.0",
+    "symfony/var-dumper": "^5.4",
+    "filp/whoops": "^2.14",
+    "fzaninotto/faker": "^1.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
